@@ -52,7 +52,7 @@ public class Main {
 
         Employee emp1 = new Employee("Tony", "Squash", employeeAddressList, 12345, 'M', 35, 837829323L);
         Employee emp2 = new Employee("Ram", "Dev", employeeAddressList, 12346, 'M', 45, 289489842L);
-        Employee emp3 = new Employee("Rita", "Squash", employeeAddressList, 12347, 'F', 36, 344225443L);
+        Employee emp3 = new Employee("Gita", "Devi", employeeAddressList, 12347, 'F', 36, 344225443L);
         Employee emp4 = new Employee("Dan", "Lift", employeeAddressList, 12348, 'F', 44, 543562244L);
 
         List<Employee> employeeList = new ArrayList<>();
