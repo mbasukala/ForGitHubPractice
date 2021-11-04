@@ -1,9 +1,9 @@
 package com.gihub;
 
 
+import javax.sound.midi.Soundbank;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
 
 public class Main {
 
@@ -203,8 +203,38 @@ public class Main {
 //            System.out.println(fruit);
 
 
-    }
+        Person person1 = new Person("Dan", "Louis", 33, 'M', "United States", "BA", "Accountant");
+        Person person2 = new Person("Rita", "Tee", 22, 'F', "India", "MBA", "Business Analyst");
+        Person person3 = new Person("Eric", "Noman", 19, 'M', "United States", "MIS", "Software Developer");
+        Person person4 = new Person("Musk", "Louis", 22, 'F', "Nepal", "MBA", "Analyst");
+        Person person5 = new Person("Ross", "Shres", 18, 'F', "Germany", "MIT", "Intern Developer");
+
+        ArrayList<Person> people = new ArrayList<Person>();
+        people.add(person1);
+        people.add(person2);
+        people.add(person3);
+        people.add(person4);
+        people.add(person5);
+
+        for (Person p : people) {
+            if (p.getAge() > 20) {
+                System.out.println("I am " + p.getFirstName() + " and " + p.getAge() + " years old.");
+            } else
+                System.out.println("Info not needed.");
         }
 
+//        for (Person p : people) {
+//            if (p.getGender() == 'M') {
+//                System.out.println("Hello Mr. " + p.getLastname());
+//            }
+//            else {
+//                System.out.println("Hi Ms. " + p.getLastname());
+//            }
+//        }
+    }
+}
 
-
+// System.out.println("I am " + p.getFirstName() + " and not over 20, just " + p.getAge());
+//        for (int i = 0; i < people.size(); i++) {
+//        }
+//        System.out.println(people.get(i).getFirstName());
